@@ -1,9 +1,55 @@
-.cabecera {
+
+@font-face{
+    font-family:'Satisfy-Regular' ;
+    src:url('Satisfy-Regular.ttf');
+}
+
+header{
 background-color:#5b7989;
 color: white;
-padding: 2px;
-text-shadow: 2px 2px #02010a ;
-border-radius: 10px 10px 0px 0px   
+border-radius: 10px 10px 0px 0px;
 
 }
+
+nav {
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+
+    
+}
+li{
+  float: right;
+  display: block;
+  margin: 0px 5px;
+  padding: 10px 10px;
+  height: 100%;
+
+        
+  
+}
+
+p{
+    float: left;
+    text-shadow: 2px 0px #02010a;
+    margin: 10px;
+    font-family: 'Shadows Into Light Two'
+    
+}
+
+header a{
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Shadows Into Light Two';
+  
+}
+
+
+
 
