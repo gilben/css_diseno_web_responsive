@@ -8,6 +8,7 @@ header{
 background-color:#5b7989;
 color: white;
 border-radius: 10px 10px 0px 0px;
+height: 60px    
 
 }
 
@@ -27,18 +28,21 @@ li{
   float: right;
   display: block;
   margin: 0px 5px;
-  padding: 10px 10px;
+  padding: 20px 10px;
   height: 100%;
+  font-size: 20px;    
 
         
   
 }
 
-p{
+nvar p{
     float: left;
     text-shadow: 2px 0px #02010a;
-    margin: 10px;
-    font-family: 'Shadows Into Light Two'
+    margin: 20px;
+    font-family: 'Shadows Into Light Two';
+    font-size: 20px
+        
     
 }
 
@@ -47,24 +51,98 @@ header a{
     color: white;
     text-decoration: none;
     font-family: 'Shadows Into Light Two';
+   
   
 }
 
-#Img1{
-   text-align: center;
-    
-}
 
-#Img1 img{
 
-width: 60%;
+#Img1 img {
+padding: 3px;
+width: 100%;    
+
+
 }
 
 #Img2 img{
-    float: left
+flex-basis: 40%;
+    width: 100%;
+  
+        
+}
+
+#Img2 img:hover{
+transform: rotatez(10deg);
+transition-duration: 1s; 
+box-shadow: 2px 0px #82c3a6;
+border-right: 2px;    
+    
+}
+
+#Img3 img{
+ flex-basis: 40%; 
+ width: 100%;
+   
+}
+
+#Img3 img:hover{
+    transform: translate(5px,-20px);
+    transition-duration: 1s;
+    box-shadow: 2px 0px #82c3a6;
+    border-right: 2px;
+}
+
+footer{
+    clear: both;
+    padding: 2px;
+    margin-top: 1%;
+     background:#C6d5c5 ;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'Shadows Into Light Two';      
+    
+    
+      
 }
 
 
+.contenedor{
+background-color: #82c3a6;
+    margin: 0px;
+}
+
+.contenedor1{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #d5c75f;
+    border: 1px ;
+    font-family: 'Shadows Into Light Two';    
+}
+
+.Contenedorfooter{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Contacto{
+    flex-grow: 0.1;
+  
+    
+}
+
+.Terminos{
+    flex-grow: 0.1;
+}
+
+.RedesSociales{
+    flex-grow:0.1 ;
+}
+
+.Derechos{
+    flex-grow:0.1 ;
+}
 
 
 
