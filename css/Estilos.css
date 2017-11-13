@@ -50,6 +50,22 @@ header a{
   
 }
 
+#Img1{
+   text-align: center;
+    
+}
+
+#Img1 img{
+
+width: 60%;
+}
+
+#Img2 img{
+    float: left
+}
+
+
+
 
 
 
