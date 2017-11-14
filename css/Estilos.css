@@ -115,7 +115,7 @@ footer {
 
     background: #C6d5c5;
     border-radius: 0px 0px 10px 10px;
-    font-family: 'Shadows Into Light Two';
+    font-family: 'DancingScript';
 
 
 
@@ -175,6 +175,11 @@ footer {
     width: 900px;
     margin: auto;
 }
+
+header a:focus{
+color: aquamarine;
+}
+
 
 /* adapta la pantalla a resoluciones pequeñas*/
 
