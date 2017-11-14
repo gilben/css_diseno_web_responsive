@@ -1,17 +1,28 @@
-@font-face {
-    font-family: 'Satisfy-Regular';
-    src: url('Satisfy-Regular.ttf');
+@font-face{
+    font-family:'DancingScript';
+    src: url('../Fonts/DancingScript.otf');
+}
+
+
+body{
+    background-color: #02010a;
+    min-width: 300px;
+    
 }
 
 header {
     background-color: #5b7989;
     color: white;
     border-radius: 10px 10px 0px 0px;
-    height: 60px
+    height: auto;
+    text-shadow: 2px #02010a;
+     font-family: 'DancingScript';
 }
 
 nav {
     height: 100%;
+    
+   
 }
 
 ul {
@@ -24,12 +35,13 @@ ul {
 }
 
 li {
-    float: right;
-    display: block;
+
     margin: 0px 5px;
     padding: 20px 10px;
     height: 100%;
     font-size: 20px;
+    float: right;
+   
 
 
 
@@ -39,7 +51,7 @@ nvar p {
     float: left;
     text-shadow: 2px 0px #02010a;
     margin: 20px;
-    font-family: 'Shadows Into Light Two';
+     font-family: 'DancingScript';
     font-size: 20px
 }
 
@@ -47,7 +59,8 @@ header a {
 
     color: white;
     text-decoration: none;
-    font-family: 'Shadows Into Light Two';
+    font-family: 'DancingScript';
+    
 
 
 }
@@ -57,6 +70,8 @@ header a {
 #Img1 img {
     padding: 3px;
     width: 100%;
+    box-shadow: 2px  #02010a;
+    filter:drop-shadow(0px 0px 2px  #02010a);
 
 
 }
@@ -64,6 +79,8 @@ header a {
 #Img2 img {
     flex-basis: 40%;
     width: 100%;
+    filter:drop-shadow(0px 0px 2px  #02010a);
+   
 
 
 }
@@ -72,13 +89,15 @@ header a {
     transform: rotatez(10deg);
     transition-duration: 1s;
     box-shadow: 2px 0px #82c3a6;
-    border-right: 2px;
+    border: 2px;
+    filter:drop-shadow(0px 0px 2px  #82c3a6);
 
 }
 
 #Img3 img {
     flex-basis: 40%;
     width: 100%;
+    filter:drop-shadow(0px 0px 2px  #02010a);
 
 }
 
@@ -86,7 +105,8 @@ header a {
     transform: translate(5px, -20px);
     transition-duration: 1s;
     box-shadow: 2px 0px #82c3a6;
-    border-right: 2px;
+    border: 2px;
+    filter:drop-shadow(0px 0px 2px  #82c3a6);
 }
 
 footer {
@@ -105,6 +125,7 @@ footer {
 .contenedor {
     background-color: #82c3a6;
     margin: 0px;
+    font-family: 'DancingScript';
 }
 
 .contenedor1 {
@@ -114,17 +135,19 @@ footer {
     text-align: center;
     background-color: #d5c75f;
     border: 1px;
-    font-family: 'Shadows Into Light Two';
+  font-family: 'DancingScript';
 }
 
 .Contenedorfooter {
     display: flex;
     flex-direction: row;
+    font-family: 'DancingScript';
 
 }
 
 .Contacto {
     flex-grow: 0.1;
+   
 
 
 }
@@ -139,4 +162,151 @@ footer {
 
 .Derechos {
     flex-grow: 0.1;
+}
+
+.Contenedorfooter strong{
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+
+#contenido{
+  text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+/* adapta la pantalla a resoluciones pequeñas*/
+
+@media (max-width: 900px) {
+
+    nvar {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    ul {
+        margin: auto;
+    }
+
+
+    nvar > p {
+        float: none;
+
+        align-items: center;
+
+    }
+    .Contenedorfooter{
+        display: flex;
+        flex-flow:column;
+        text-align: center;
+    }
+   
+  
+    .contenedor1{
+        display: flex;
+        flex-flow: column;
+    }
+    #contenido{
+        width: 100%;
+    }
+    /*
+
+
+	width: 50%;
+#wrapper
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+	#columna1
+	{
+	background-color: #82c3a6;
+	width: 100%;
+
+	}
+	#columna2
+	{
+	background-color: #D1D1D1;
+	}
+	#columna3
+	{
+	background-color: #3399CC;
+	width: 50%;
+	}
+
+@media screen and (max-width: 960px){
+
+	#wrapper
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+
+}
+
+@media screen and (max-width: 480px){
+    
+
+
+ul {
+  
+    width: 100%;
+
+
+}
+
+li {
+
+    width: 100%;
+
+
+}
+
+nvar p {
+  
+    width: 100%
+}
+
+
+*/
+    /*#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}*/
 }
