@@ -4,10 +4,24 @@
 }
 
 
+
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+
+    }
+    to {
+        margin-top: -5%;
+
+
+    }
+}
+
 body {
     background-color: #02010a;
     min-width: 300px;
     font-family: 'DancingScript';
+    margin-top: auto;
 
 }
 
@@ -16,12 +30,16 @@ header {
     color: white;
     border-radius: 10px 10px 0px 0px;
     height: auto;
-    text-shadow: 2px #02010a;
-    
+    text-shadow: 2px 0px #02010a;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+
+
 }
 
 nav {
     height: 100%;
+
 
 
 }
@@ -43,16 +61,13 @@ li {
     font-size: 20px;
     float: right;
 
-
-
-
 }
 
 nvar p {
     float: left;
-    text-shadow: 2px 0px #02010a;
+
     margin: 20px;
-   
+
     font-size: 20px
 }
 
@@ -60,9 +75,6 @@ header a {
 
     color: white;
     text-decoration: none;
-    
-
-
 
 }
 
@@ -111,27 +123,17 @@ header a {
 }
 
 .Imgpaisaje img {
-   
-   
-   width: 100%;
-   
-       
-    
-  
-        
+
+
+    width: 100%;
+
 }
-
-
 
 footer {
     clear: both;
     padding: 2px;
-
     background: #C6d5c5;
     border-radius: 0px 0px 10px 10px;
-    
-
-
 
 }
 
@@ -139,44 +141,46 @@ footer {
 .contenedor {
     background-color: #82c3a6;
     margin: 0px;
-    
+    text-align: center;
+    margin: auto;
+
 }
 
 .contenedor1 {
     margin: 0px;
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
     text-align: center;
     background-color: #d5c75f;
     border: 1px;
     font-family: 'DancingScript';
     flex-wrap: wrap;
- 
+
 }
 
-.contenedorheader {
+.contenedorindex {
     margin: 0px;
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
     text-align: center;
     background-color: #d5c75f;
     border: 1px;
     font-family: 'DancingScript';
-   
- 
+
+
 }
 
-.contenedor1>figure{
-   width: 24%;
-    
+.contenedor1 > figure {
+    width: 24%;
 
-       
+
+
 }
 
 .Contenedorfooter {
     display: flex;
     flex-direction: row;
-    
+
 
 }
 
@@ -211,6 +215,8 @@ footer {
     text-align: center;
     width: 900px;
     margin: auto;
+    margin-top: 0%;
+
 }
 
 header a:focus {
@@ -219,16 +225,16 @@ header a:focus {
 
 /*Filtros*/
 
-
-#Img1 img{
+#Img1 img {
     filter: blur(10px);
 }
 
-.contenedor1 figure:nth-child(even){
-    filter:grayscale(100%);
-      
+.contenedor1 figure:nth-child(even) {
+    filter: grayscale(100%);
+
 }
-#Img3 img{
+
+#Img3 img {
     filter: sepia(90%);
 }
 
@@ -266,34 +272,32 @@ header a:focus {
     .contenedor1 {
         display: flex;
         flex-flow: column;
-        
+
     }
-      .contenedorheader {
+    .contenedorindex {
         display: flex;
         flex-flow: column;
     }
     #contenido {
         width: 100%;
     }
-    
-    .Imgpaisaje img{
+
+    .Imgpaisaje img {
         flex-flow: column;
-        
+
     }
-    .contenedor1>figure{
-  width: inherit;
-    
+    .contenedor1 > figure {
+        width: inherit;
 
-       
+
+
+    }
+
+
+
+
+
+
+
+
 }
-    
-  
-       
-    
-  
-        
-
-
-}
-
-
